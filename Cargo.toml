@@ -1,0 +1,30 @@
+[package]
+name = "remindme"
+version = "0.1.0"
+authors = ["jacobvm04 <jacobvm04@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+redis = "0.16"
+serde = "1.0"
+serde_json = "1.0"
+flexi_logger = "0.15"
+log = "0.4"
+
+[dependencies.serenity]
+default-features = false
+features = [
+    "cache",
+    "builder",
+    "client",
+    "framework",
+    "gateway",
+    "http",
+    "model",
+    "standard_framework",
+    "utils",
+    "rustls_backend",
+]
+version = "0.8"
